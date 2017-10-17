@@ -1,0 +1,24 @@
+<%- include('/inc/header.html') %>
+<div class="col-sm-12">
+    <img src="/img/head.jpg" style="width: 100%;">
+</div>
+<div class="clearfix"></div>
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+    <div class="row">
+        <h6>热门推荐</h6>
+    </div>
+    <ul class="col-sm-12">
+        <%pager.items.forEach(function(news){%>
+            <li>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <a href="/news/<%=news.id%>">
+                    <%=news.title%>
+                </a>
+            </li>
+            <%})%>
+    </ul>
+</div>
+<div class="col-sm-4"></div>
+<br>
+<%- include('/inc/footer.html')%>

@@ -1,0 +1,27 @@
+<table class="table table-hover table-bordered">
+    <thead>
+        <th>ID</th><th>名称</th><th>类型</th><th>链接</th><th>操作</th>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="menu in pager.items">
+            <td>{{menu.id}}</td>
+            <td>{{menu.name}}</td>
+            <td>
+                <span ng-if="menu.type == 1">顶部菜单</span>
+                <span ng-if="menu.type == 2">底部菜单</span>
+            </td>
+            <td>{{menu.url}}</td>
+            <td>
+                <a ng-href="#!/menu/save?id={{menu.id}}">编辑</a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6" class="text-right">
+                <paginate pager="pager"></paginate>
+            </td>
+        </tr>
+    </tfoot>
+</table>

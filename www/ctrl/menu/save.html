@@ -1,0 +1,41 @@
+<table class="table">
+    <tr ng-if="menu.id">
+        <th>ID</th>
+        <td><input type="text" ng-model="menu.id" class="form-control" readonly /></td>
+    </tr>
+
+    <tr>
+        <th>菜单名称</th>
+        <td>
+            <input type="text" placeholder="菜单名称" ng-model="menu.name" class="form-control"/>
+        </td>
+    </tr>
+
+    <tr>
+        <th>链接地址</th>
+        <td>
+            <input type="text" placeholder="链接地址:如 /index" ng-model="menu.url" class="form-control"/>
+        </td>
+    </tr>
+
+    <tr>
+        <th>菜单类型</th>
+        <td>
+            <select ng-options="item as item.name for item in items track by item.value" ng-model="menu.type">
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th>排序</th>
+        <td>
+            <input type="text" placeholder="排序，数字越大越靠后" ng-model="menu.orders" class="form-control">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <button class="btn btn-primary" ng-click="saveMenu()">保存</button>
+        </td>
+    </tr>
+</table>

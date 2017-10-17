@@ -1,0 +1,41 @@
+<div>
+
+
+    <form>
+        <div class="form-group">
+            <label>标题</label>
+            <input type="text" class="form-control" placeholder="标题" ng-model="news.title"/>
+        </div>
+
+        <div class="form-group">
+            <label>发布时间</label>
+            <input type="text" class="form-control" placeholder="发布时间" ng-model="news.createdAt"/>
+        </div>
+
+        <div class="form-group">
+            <label>新闻内容</label>
+            <textarea id="content" rows="5" cols="50" placeholder="新闻内容" ng-model="news.content" kindeditor></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>分类</label>
+            <select 
+                ng-options="item.id as item.name for item in categories track by item.id"
+                ng-model="news.category">
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>所属栏目{{news.columnId}}</label>
+            <select
+                ng-options="item.id as item.name for item in columns.items track by item.id"
+                ng-model="news.columnId">
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>&nbsp;</label>
+            <input type="button" value="提交" class="btn btn-primary" data-ng-click="save()"/>
+        </div>
+    </form>
+</div>

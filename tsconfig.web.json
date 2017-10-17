@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "./tmp/tsreq",
+    "declaration": false,
+    "experimentalDecorators": true
+  },
+  "include": [
+      "www"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "doc",
+    "bin",
+    "logs",
+    "test",
+    "tmp",
+    "www/libs"
+  ]
+}

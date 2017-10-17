@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="column in paginate.items">
+
+        <a ng-href="#!/news/column/detail?id={{column.id}}" ng-bind="column.name"></a> &nbsp;&nbsp;
+        <a ng-href="#!/news/column/save?id={{column.id}}">修改</a>
+        <a ng-href=#!/news/column/save?parentId={{column.id}}>添加子栏目</a>
+    </li>
+</ul>

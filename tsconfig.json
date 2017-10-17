@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": false,
+    "experimentalDecorators": true,
+    "baseUrl": "."
+  },
+  "lib": ["ES2015", "ES2015.Promise"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "doc",
+    "bin",
+    "logs",
+    "test",
+    "tmp"
+  ]
+}

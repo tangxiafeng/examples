@@ -1,0 +1,8 @@
+{
+  "debug": false,
+  "viewCache": true,
+  "database": {
+    "url1": "mysql://root:@127.0.0.1/forwardcms",
+    "url": "mysql://test:test123456@127.0.0.1/forwardcms"
+  }
+}

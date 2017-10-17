@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页面</title>
+</head>
+<body>
+<ul>
+{{#paginate.items}}
+    <li><a href="/news/{{id}}">{{title}}</a></li>
+{{/paginate.items}}
+</ul>
+</body>
+</html>

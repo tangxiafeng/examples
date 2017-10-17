@@ -1,0 +1,35 @@
+<form>
+    <div ng-if="column.id">
+        <label>
+            ID:
+        </label>
+        <input type="text" class="form-control" ng-model="column.id" readonly/>
+    </div>
+
+    <div>
+        <label>
+            栏目名称
+        </label>
+        <input type="text" class="form-control" ng-model="column.name" />
+        <br/>
+    </div>
+
+    <div>
+        <label>上级栏目</label>
+        <input readonly type="text" class="form-control" ng-model="parentColumn.name"/>
+    </div>
+
+    <div>
+        <label>
+            内容类别
+        </label>
+        <select ng-model="column.type"
+                ng-options="item.id as item.name for item in types track by item.id">
+        </select>
+        <br/>
+    </div>
+
+    <div class="col-sm-12">
+        <button ng-click="save()" class="btn btn-primary">保存</button>
+    </div>
+</form>

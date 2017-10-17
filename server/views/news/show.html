@@ -1,0 +1,54 @@
+<%- include('/inc/header.html') %>
+<div class="col-sm-12">
+    <div class="col-sm-3">
+        <h6>相关栏目</h6>
+        <ul>
+            <%locals._.columns.forEach( function(column) {%>
+                <li><a href="/column/<%=column.id%>"><%=column.name%></a></li>
+            <%})%>
+        </ul>
+    </div>
+
+    <div class="col-sm-9">
+        <div>
+            <a href="/">首页</a> >>
+            <a href="/column/<%=column.id%>">
+                <%=column.name%>
+            </a>
+            >>
+            <%=news.title%>
+        </div>
+        <h1>
+            <%=news.title%>
+        </h1>
+        <div style="text-align: right">
+            <p>
+                <span><%=news.author%></span>,发表于
+                <%=news.createdAt%>
+            </p>
+        </div>
+        <hr>
+
+        <div style="min-height: 300px;">
+            <%-news.content%>
+        </div>
+
+        <div>
+            <p>上一篇:
+                <%if(locals.lastNews){%>
+                    <a href="/news/<%=lastNews.id%>"><%=lastNews.title%></a>
+                <%}else{%>
+                    没有上一条了
+                <%}%>
+            </p>
+            <p>下一篇:
+                <%if(locals.nextNews){%>
+                    <a href="/news/<%=nextNews.id%>"><%=nextNews.title%></a></p>
+                <%}else{%>
+                    没有下一条了
+                <%}%>
+        </div>
+    </div>
+</div>
+
+<%- include('/inc/footer.html')%>

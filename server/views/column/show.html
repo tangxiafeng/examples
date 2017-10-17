@@ -1,0 +1,29 @@
+<%- include('/inc/header.html') %>
+
+    <div class="col-sm-3">
+        <h4>相关栏目</h4>
+        <ul>
+            <%columns.forEach(function(column){%>
+            <li><a href="/column/<%=column.id%>"><%=column.name%></a></li>
+            <%})%>
+        </ul>
+    </div>
+
+    <div class="col-sm-9" style="min-height: 400px;">
+        <h2><%=column.name%></h2>
+        <hr>
+        <ul>
+            <%news.items.forEach( function(item){%>
+            <li>
+ 
+                <a href="/column/<%=column.id%>/news/<%=item.id%>">
+                    <%=item.title%>
+                </a>
+                <%if(item.isTop){%><span>[顶]</span><%}%>
+                <%if(item.isRecommend){%><span>[荐]</span><%}%>
+            </li>
+            <%})%>
+        </ul>
+    </div>
+
+<%- include('/inc/footer.html')%>

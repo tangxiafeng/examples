@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ForwardCMS演示网站</title>
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/libs/bundle.lib.css" type="text/css">
+    <script src="/libs/bundle.manifest.js"></script>
+    <script src="/libs/bundle.vendor.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="col-sm-12" style="height: 100px;">
+        企业头部信息
+    </div>
+
+    <nav class="navbar navbar-default col-sm-12">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                   首页
+                </a>
+                <ul class="nav navbar-nav">
+                    <%locals._.columns.forEach(function(column){%>
+                        <li><a href="/column/<%=column.id%>"><%=column.name%></a></li>
+                    <%})%>
+                </ul>
+            </div>
+        </div>
+    </nav>
