@@ -5,7 +5,7 @@
 
 'use strict';
 import {News, NewsModel} from "../../module/news/model/index";
-import {AbstractController, AutoInject, Restful, Router} from "@jingli/restful";
+import {AbstractController, AutoInject, Restful, Router} from "@a/restful";
 import {ColumnModel} from "../../module/column/model/index";
 
 

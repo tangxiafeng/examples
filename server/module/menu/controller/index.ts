@@ -5,7 +5,7 @@
 
 'use strict';
 import {Menu, MenuModel} from '../model';
-import {AbstractController, AutoInject, Restful, Router} from "@jingli/restful";
+import {AbstractController, AutoInject, Restful, Router} from "@a/restful";
 
 @Restful()
 export class MenuController extends AbstractController {

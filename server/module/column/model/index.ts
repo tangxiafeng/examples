@@ -8,7 +8,7 @@ import {AbstractModel} from "../../../model";
 import Sequelize = require('sequelize');
 import {AbstractEntityObject} from '../../../entity';
 import {DbModels, defineTable} from '../../db';
-import {Service} from "@jingli/restful";
+import {Service} from "@a/restful";
 
 defineTable('Column', {
     id: {

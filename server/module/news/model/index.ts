@@ -9,7 +9,7 @@ import Sequelize = require('sequelize');
 
 import {defineTable, DbModels} from '../../db';
 import {AbstractEntityObject} from "../../../entity";
-import {Service} from "@jingli/restful";
+import {Service} from "@a/restful";
 
 defineTable('News', {
     id: {

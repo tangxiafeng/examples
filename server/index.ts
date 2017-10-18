@@ -10,7 +10,7 @@ import log4js = require('./logging');
 import path = require("path");
 import bodyParser = require("body-parser");
 import ejs = require("ejs");
-import {registerControllerToRouter} from "@jingli/restful";
+import {registerControllerToRouter} from "@a/restful";
 import {middleware} from "./view";
 
 let logger = log4js.getLogger("route");

@@ -3,7 +3,7 @@
  */
 
 'use strict';
-import {Restful, Router} from '@jingli/restful';
+import {Restful, Router} from '@a/restful';
 
 @Restful('/admin')
 export class AdminController {

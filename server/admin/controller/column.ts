@@ -5,7 +5,7 @@
 
 'use strict';
 import {ColumnModel, Column} from "../../module/column/model/index";
-import {AbstractController, AutoInject, Restful, Router} from "@jingli/restful";
+import {AbstractController, AutoInject, Restful, Router} from "@a/restful";
 
 @Restful('/admin/column')
 export class ColumnController  extends AbstractController {

@@ -4,7 +4,7 @@
 
 
 'use strict';
-import {Restful, Router} from "@jingli/restful";
+import {Restful, Router} from "@a/restful";
 
 @Restful()
 export class UploadController {

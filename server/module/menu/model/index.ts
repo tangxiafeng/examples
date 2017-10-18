@@ -8,7 +8,7 @@ import {AbstractModel} from "../../../model";
 import Sequelize = require('sequelize');
 import {IEntityObject} from '../../../entity';
 import {defineTable, DbModels} from '../../db';
-import {Service} from "@jingli/restful";
+import {Service} from "@a/restful";
 
 export enum EMenuType {
     TOP = 1,
