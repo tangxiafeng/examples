@@ -21,7 +21,7 @@
   "author": "wanglihui.sjz@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "@jingli/restful": "^0.1.5",
+    "@a/restful": "^0.1.5",
     "@types/body-parser": "^1.16.3",
     "@types/lodash": "^4.14.64",
     "body-parser": "^1.17.2",

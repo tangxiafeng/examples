@@ -8,7 +8,7 @@
 const http = require('http');
 import path = require("path");
 //扫描装饰器
-import {scannerDecoration} from "@jingli/restful";
+import {scannerDecoration} from "@a/restful";
 scannerDecoration(path.join(__dirname, 'server'), ['static', 'views']);
 
 import {$init} from './server';
